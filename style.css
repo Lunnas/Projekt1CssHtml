@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+header {
+  background-image: url(tło8.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: black;
+}
+
+.nav {
+  width: 100%;
+  background-color: rgb(94, 90, 90);
+  z-index: 11;
+}
+.wrapperNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+}
+.logo {
+  margin: 10px 90px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  align-items: center;
+  color: bisque;
+  text-transform: uppercase;
+}
+.links {
+  font-family: Roboto;
+  font-weight: normal;
+  line-height: 21px;
+  font-size: 18px;
+  color: aqua;
+  display: flex;
+  justify-content: space-between;
+}
+.link {
+  margin: 10px 25px;
+}
+.link-contact {
+  margin: 10px 25px;
+  cursor: not-allowed;
+}
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 12;
+}
+.shadow-header {
+  position: absolute;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 10;
+}
+.wrapperHead {
+  margin-left: 90px;
+  max-width: 100%;
+  height: 100vh;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.N1 {
+  padding-bottom: 60px;
+  font-size: 36px;
+  line-height: 42px;
+}
+.N2 {
+  padding-bottom: 40px;
+}
+
+.buttonHeader {
+  width: 164px;
+  height: 42px;
+  padding: 7px 45px;
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  border: 3px solid #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+/*@media screen and (min-width: 1024px) {
+  .buttonHeader {
+    background-color: transparent;
+    color: white;
+    transition-duration: 1s;
+  }*/
+.buttonHeader:hover {
+  background-color: white;
+  font-weight: bold;
+  color: black;
+  transition-duration: 1s;
+}
+
+.person {
+  line-height: 21px;
+  font-family: Roboto;
+  font-size: 18px;
+}
+.title {
+  width: 386px;
+  height: 35px;
+  padding-top: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+}
+.wrapperPer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.art {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 165px;
+}
+.art:nth-of-type(odd) {
+  flex-direction: row;
+}
+.art:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+.foto1 {
+  width: 197px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url(person1.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.foto2 {
+  width: 197px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-image: url(person2.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+.about {
+  position: absolute;
+  width: 866px;
+  height: 104px;
+  margin: 200px 350px;
+}
+.name {
+  font-weight: 700;
+  margin: 20px;
+}
+.discrip {
+  font-weight: 400;
+}
+.services {
+  width: 100%;
+  height: 689px;
+  background: #405d78;
+  font-family: roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  color: #fff;
+  padding-left: 100px;
+  padding-top: 50px;
+  position: relative;
+}
+/*.question {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+}*/
+.wrapperServices {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 80px 180px;
+  gap: 63px 63px;
+  position: absolute;
+}
+.box-inside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 198px;
+  height: 193.78px;
+  background-color: white;
+  border: 1px solid black;
+  padding: 65px 25px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.box-inside:hover {
+  transform: scale(1.05);
+}
+.box-inside-new {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.name {
+  font-family: Roboto;
+  font-size: 24px;
+  line-height: 28px;
+  color: black;
+  align-items: baseline;
+}
+.footer {
+  position: absolute;
+  width: 100%;
+  height: 71px;
+  background-color: #4e4e4e;
+}
+.wrapperFoot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-family: roboto;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+  color: #fff;
+}
+.prawa {
+  margin: 25px;
+}
+.contact {
+  margin-right: 80px;
+}
+
+a:link {
+  color: aqua;
+}
+a:visited {
+  color: aqua;
+}
+a:hover {
+  color: aqua;
+}
+a:active {
+  color: red;
+}
