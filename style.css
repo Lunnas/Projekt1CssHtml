@@ -40,9 +40,11 @@ header {
 }
 .link {
   color: transparent;
+  text-decoration: none;
 }
 .link-contact {
   color: transparent;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .links {
@@ -112,6 +114,7 @@ header {
   color: white;
   border: 3px solid #fff;
   z-index: 10;
+  text-decoration: none;
 }
 @media screen and (min-width: 768px) {
   .buttonHeader {
@@ -145,15 +148,24 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  text-align: center;
 }
 .art {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+  margin-left: 95px;
+  margin-right: 90px;
+  text-align: left;
+}
+.art2 {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   margin-bottom: 80px;
   margin-left: 95px;
   margin-right: 90px;
+  text-align: right;
 }
 .foto1 {
   width: 20%;
@@ -195,6 +207,12 @@ header {
     justify-content: space-between;
     align-items: center;
   }
+  .art2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
   .art:nth-of-type(odd) {
     flex-direction: row;
   }
@@ -224,7 +242,7 @@ header {
     position: absolute;
     max-width: 480px;
     max-height: 104px;
-    margin: 10% 20%;
+    margin: 3% 20%;
   }
   .discrip {
     font-weight: 400;
@@ -245,11 +263,13 @@ header {
 .wrapperServices {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 15%;
+  margin-right: 10%;
   align-items: center;
-  margin-top: 10%;
-  width: 100%;
+  margin-top: 5%;
+  /*width: 100%;*/
   height: 80%;
-  gap: 63px 63px;
+  /*gap: 63px 63px;*/
 }
 .box-inside {
   display: flex;
@@ -258,7 +278,7 @@ header {
   position: relative;
   width: 20%;
   aspect-ratio: 1/1;
-  margin: 35px;
+  margin: 32px;
   background-color: white;
   border: 1px solid black;
 }
